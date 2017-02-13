@@ -86,7 +86,6 @@ typedef NSUInteger CDVMediaMsg;
     NSMutableDictionary* soundCache;
     NSString* currMediaId;
     AVAudioSession* avSession;
-    AVPlayer* avPlayer;
 }
 @property (nonatomic, strong) NSMutableDictionary* soundCache;
 @property (nonatomic, strong) AVAudioSession* avSession;
