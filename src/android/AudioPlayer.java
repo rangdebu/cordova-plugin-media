@@ -153,6 +153,8 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
             this.recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
             this.recorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4);
             this.recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+            this.recorder.setAudioSamplingRate(44100);
+            this.recorder.setAudioEncodingBitRate(352800);
             this.tempFile = generateTempFile();
             this.recorder.setOutputFile(this.tempFile);
             try {
